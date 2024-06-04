@@ -204,7 +204,7 @@
         "type_variety": "default",
         "params": {
           "target_psd_out_mWperGHz": 0.0005,
-          "add_drop_osnr": 40,
+          "add_drop_osnr": 40
         }
       },
       {
