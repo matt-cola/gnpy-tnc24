@@ -1,0 +1,297 @@
+{
+    "elements": [
+      {
+        "uid": "TX",
+        "type": "Transceiver",
+        "type_variety": "CHM1"
+      },
+      {
+        "uid": "ROADM-A__WSSes (Forward 1)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 0.0005,
+          "add_drop_osnr": 40
+        }
+      },
+      {
+        "uid": "ROADM-A__D2__BA",
+        "type": "Edfa",
+        "type_variety": "std_fixed_gain",
+        "operational": {
+          "gain_target": 21,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 3
+        }
+      },
+      {
+        "uid": "ROADM-A__D2__BA --> ROADM-B__D1__PA",
+        "type": "Fiber",
+        "type_variety": "SSMF",
+        "params": {
+          "length": 100,
+          "length_units": "km",
+          "loss_coef": 0.19,
+          "con_in": 0.25,
+          "con_out": 3.35
+        }
+      },
+      {
+        "uid": "ROADM-B__D1__PA",
+        "type": "Edfa",
+        "type_variety": "std_high_gain",
+        "operational": {
+          "gain_target": 25,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 3
+        }
+      },
+         {
+        "uid": "ROADM-B__WSSes (Forward)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 0.0004,
+          "add_drop_osnr": 40
+        }
+      },
+  
+      {
+        "uid": "ROADM-B__D2__BA",
+        "type": "Edfa",
+        "type_variety": "std_fixed_gain",
+        "operational": {
+          "gain_target": 21,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 2
+        }
+      },
+      {
+        "uid": "ROADM-B__D2__BA --> ROADM-A__D1__PA",
+        "type": "Fiber",
+        "type_variety": "SSMF",
+        "params": {
+          "length": 125,
+          "length_units": "km",
+          "loss_coef": 0.19,
+          "con_in": 0.25,
+          "con_out": 2.5
+        }
+      },
+      {
+        "uid": "ROADM-A__D1__PA",
+        "type": "Edfa",
+        "type_variety": "std_high_gain",
+        "operational": {
+          "gain_target": 30,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 3
+        }
+      },
+      {
+        "uid": "ROADM-A__WSSes (Forward 2)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 1e-3,
+          "add_drop_osnr": 40
+        }
+      },
+      {
+        "uid": "Loop Amplifier",
+        "type": "Edfa",
+        "type_variety": "std_medium_gain",
+        "operational": {
+          "gain_target": 15,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 1
+        }
+      },
+      {
+        "uid": "ROADM-A__WSSes (Back 1)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 0.0004,
+          "add_drop_osnr": 40
+        }
+      },
+      {
+        "uid": "ROADM-A__D1__BA",
+        "type": "Edfa",
+        "type_variety": "std_fixed_gain",
+        "operational": {
+          "gain_target": 21,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 3
+        }
+      },
+      {
+        "uid": "ROADM-A__D1__BA --> ROADM-B__D2__PA",
+        "type": "Fiber",
+        "type_variety": "SSMF",
+        "params": {
+          "length": 125,
+          "length_units": "km",
+          "loss_coef": 0.19,
+          "con_in": 0.25,
+          "con_out": 2.75
+        }
+      },
+      {
+        "uid": "ROADM-B__D2__PA",
+        "type": "Edfa",
+        "type_variety": "std_high_gain",
+        "operational": {
+          "gain_target": 29,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 2
+        }
+      },
+      {
+        "uid": "ROADM-B__WSSes (Back)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 0.0004,
+          "add_drop_osnr": 40
+        }
+      },
+          {
+        "uid": "ROADM-B__D1__BA",
+        "type": "Edfa",
+        "type_variety": "std_fixed_gain",
+        "operational": {
+          "gain_target": 21,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 2.4
+        }
+      },
+          {
+        "uid": "ROADM-B__D1__BA --> ROADM-A__D2__PA",
+        "type": "Fiber",
+        "type_variety": "SSMF",
+        "params": {
+          "length": 100,
+          "length_units": "km",
+          "loss_coef": 0.19,
+          "con_in": 0.25,
+          "con_out": 2.15
+        }
+      },
+      {
+        "uid": "ROADM-A__D2__PA",
+        "type": "Edfa",
+        "type_variety": "std_high_gain",
+        "operational": {
+          "gain_target": 25,
+          "delta_p": null,
+          "tilt_target": 0,
+          "out_voa": 3
+        }
+      },
+       {
+        "uid": "ROADM-A__WSSes (Back 2)",
+        "type": "Roadm",
+        "type_variety": "default",
+        "params": {
+          "target_psd_out_mWperGHz": 0.0005,
+          "add_drop_osnr": 40,
+        }
+      },
+      {
+        "uid": "RX",
+        "type": "Transceiver",
+        "type_variety": "CHM1"
+      }
+    ],
+    "connections": [
+      {
+        "from_node": "TX",
+        "to_node": "ROADM-A__WSSes (Forward 1)"
+      },
+          {
+        "from_node": "ROADM-A__WSSes (Forward 1)",
+        "to_node": "ROADM-A__D2__BA"
+      },
+          {
+        "from_node": "ROADM-A__D2__BA",
+        "to_node": "ROADM-A__D2__BA --> ROADM-B__D1__PA"
+      },
+          {
+        "from_node": "ROADM-A__D2__BA --> ROADM-B__D1__PA",
+        "to_node": "ROADM-B__D1__PA"
+      },
+          {
+        "from_node": "ROADM-B__D1__PA",
+        "to_node": "ROADM-B__WSSes (Forward)"
+      },
+          {
+        "from_node": "ROADM-B__WSSes (Forward)",
+        "to_node": "ROADM-B__D2__BA"
+      },    {
+        "from_node": "ROADM-B__D2__BA",
+        "to_node": "ROADM-B__D2__BA --> ROADM-A__D1__PA"
+      },
+          {
+        "from_node": "ROADM-B__D2__BA --> ROADM-A__D1__PA",
+        "to_node": "ROADM-A__D1__PA"
+      },
+      {
+        "from_node": "ROADM-A__D1__PA",
+        "to_node": "ROADM-A__WSSes (Forward 2)"
+      },
+          {
+        "from_node": "ROADM-A__WSSes (Forward 2)",
+        "to_node": "Loop Amplifier"
+      },
+          {
+        "from_node": "Loop Amplifier",
+        "to_node": "ROADM-A__WSSes (Back 1)"
+      },
+          {
+        "from_node": "ROADM-A__WSSes (Back 1)",
+        "to_node": "ROADM-A__D1__BA"
+      },
+          {
+        "from_node": "ROADM-A__D1__BA",
+        "to_node": "ROADM-A__D1__BA --> ROADM-B__D2__PA"
+      },
+          {
+        "from_node": "ROADM-A__D1__BA --> ROADM-B__D2__PA",
+        "to_node": "ROADM-B__D2__PA"
+      },
+          {
+        "from_node": "ROADM-B__D2__PA",
+        "to_node": "ROADM-B__WSSes (Back)"
+      },
+          {
+        "from_node": "ROADM-B__WSSes (Back)",
+        "to_node": "ROADM-B__D1__BA"
+      },
+          {
+        "from_node": "ROADM-B__D1__BA",
+        "to_node": "ROADM-B__D1__BA --> ROADM-A__D2__PA"
+      },
+              {
+        "from_node": "ROADM-B__D1__BA --> ROADM-A__D2__PA",
+        "to_node": "ROADM-A__D2__PA"
+      },
+          {
+        "from_node": "ROADM-A__D2__PA",
+        "to_node": "ROADM-A__WSSes (Back 2)"
+      },
+          {
+        "from_node": "ROADM-A__WSSes (Back 2)",
+        "to_node": "RX"
+      }
+    ]
+  }
